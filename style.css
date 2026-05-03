@@ -1,0 +1,163 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* BASE */
+body {
+    font-family: 'Segoe UI', Roboto, Arial, sans-serif;
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    color: #2d2d2d;
+    line-height: 1.6;
+}
+
+/* MAIN LAYOUT */
+body {
+    padding: 20px;
+}
+
+/* CARD STYLE FOR SECTIONS */
+section {
+    background: #ffffff;
+    max-width: 900px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 16px;
+    box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+/* hover interaction */
+section:hover {
+    transform: translateY(-4px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+}
+
+/* PROFESSIONAL HEADER (HERO SECTION) */
+.hero {
+    text-align: center;
+    padding: 60px 20px;
+    margin: 20px auto;
+    max-width: 900px;
+
+    /* soft gradient background */
+    background: linear-gradient(135deg, #c0392b, #e74c3c);
+    color: white;
+
+    border-radius: 18px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.15);
+}
+
+/* TITLE */
+.hero h1 {
+    font-size: 3rem;
+    letter-spacing: 1px;
+    margin-bottom: 10px;
+    font-weight: 700;
+}
+
+/* SUBTITLE */
+.hero p {
+    font-size: 1.2rem;
+    max-width: 600px;
+    margin: 0 auto;
+    opacity: 0.95;
+}
+
+/* MOBILE RESPONSIVENESS */
+@media (max-width: 768px) {
+    .hero {
+        padding: 40px 15px;
+    }
+
+    .hero h1 {
+        font-size: 2.2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
+
+/* SECTION HEADINGS */
+h2 {
+    color: #e74c3c;
+    font-size: 1.4rem;
+    margin-bottom: 12px;
+    border-left: 5px solid #e74c3c;
+    padding-left: 10px;
+}
+
+/* TEXT */
+p {
+    margin-bottom: 10px;
+}
+
+/* LISTS */
+ul, ol {
+    padding-left: 22px;
+}
+
+li {
+    margin-bottom: 8px;
+}
+
+/*  */
+img {
+    width: 100%;
+    max-width: 450px;
+    display: block;
+    margin: 15px auto;
+    border-radius: 12px;
+}
+
+/* LINK STYLE */
+a {
+    color: #c0392b;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* =========================
+   MOBILE RESPONSIVENESS
+========================= */
+@media (max-width: 768px) {
+
+    h1 {
+        font-size: 2.2rem;
+    }
+
+    section {
+        padding: 15px;
+        margin: 15px 10px;
+    }
+
+    body {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1 {
+        font-size: 1.8rem;
+    }
+
+    h2 {
+        font-size: 1.2rem;
+    }
+
+    header p {
+        font-size: 1rem;
+    }
+
+    section {
+        border-radius: 12px;
+    }
+}
